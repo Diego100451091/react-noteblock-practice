@@ -18,9 +18,6 @@ export function TaskContextProvider(props) {
   function deleteTask(taskID) {
     console.log(taskID);
     setTasks(tasks.filter((task) => task.id !== taskID));
-    for (let i = 0; i < tasks.length; i++) {
-      console.log("Elemento en lista" + tasks[i].id);
-    }
   }
 
   function deleteAllTask() {
